@@ -10,6 +10,16 @@ tmr.alarm(1, 1000, 1, function()
     else 
      tmr.stop(1)
      print("Config done, IP is "..wifi.sta.getip())
+     wifi.sta.getap(listap)     
      dofile("dofile.lua")
     end 
  end)
+
+-- print ap list
+function listap(t)
+  for k,v in pairs(t) do
+    print(k.." : "..v)
+  end
+end
+
+
