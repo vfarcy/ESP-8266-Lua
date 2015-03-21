@@ -1,4 +1,5 @@
 --init.lua
+--Last version of the firmware @ https://github.com/nodemcu/nodemcu-firmware/tree/master/pre_build
 print("set up wifi mode")
 wifi.setmode(wifi.STATION)
 wifi.sta.config("soussol","")
